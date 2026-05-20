@@ -4,25 +4,222 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>100 Blooms</title>
+    <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
     
   
 <body>
-     <!-- This is navigation bar -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>100 Blooms</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    
+    
+    <!-- This is navigation bar -->
+    <header class="site-header" id="site-header">
+
+    <div class="nav-container">
+            <a href="index.html" class="logo"></a>
+            <span class="logo-icon"></span>
+            <h1>100 Blooms</h1>
+    </div>
+
+    </nav>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="collection.html">Collection</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" >Contact Us</a></li>
+        </ul>
+     </nav>
     </header>
+
+
+<!-- This is the blog section where it showcases featured content -->
+<section class="blog">
+    <div class="blog-bg">
+      <div class="blog blog-1"></div>
+      <div class="blog blog-2"></div>
+      <div class="blog blog-3"></div>
+    </div>
+    <div class="blog-content">
+      <p class="blog-eyebrow">Johannesburg's Premier Floral Studio</p>
+      <h1 class="blog-title">Where every<br /><em>bloom</em> tells<br />a story</h1>
+      <p class="blog-sub">Handcrafted bouquets, curated gifts, and floral designs for life's most meaningful moments.</p>
+      <div class="blog-cta">
+        <a href="services.html" class="btn-primary">Explore Offerings</a>
+        <a href="contact.html" class="btn-ghost">Order Now →</a>
+      </div>
+</section>
+
+<!-- This is the strip section which is a simple design element to break up the content -->
+<section>
+    <div class="strip"></div>
+</section>
+<!-- This is the services preview section which gives a brief overview of the services offered -->
+
+<section class="services" id="services">
+    <div class="services-label">What We Do</div>
+    <h2 class="services-title">Crafted for<br /><em>every occasion</em></h2>
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-icon">💐</div>
+        <h3>Bouquets & Arrangements</h3>
+        <p>From classic roses to wild meadow bunches, each arrangement is hand-tied by our expert florists using the freshest seasonal stems.</p>
+        <a href="services.html#bouquets"> More info →</a>
+      </article>
+      <article class="service-card">
+        <div class="service-icon">🎁</div>
+        <h3>Gift Packages</h3>
+        <p>Thoughtfully curated hampers pairing beautiful blooms with premium chocolates, candles, and personalised keepsakes.</p>
+        <a href="services.html#packages"> More info →</a>
+      </article>
+      <article class="service-card">
+        <div class="service-icon">💍</div>
+        <h3>Wedding Florals</h3>
+        <p>Full wedding floral design — bridal bouquets, ceremony arches, table centrepieces — all tailored to your vision and theme.</p>
+        <a href="services.html#weddings"> More info →</a>
+      </article>
+      <article class="service-card">
+        <div class="service-icon">🏢</div>
+        <h3>Corporate & Events</h3>
+        <p>Subscription floral programmes and event styling for offices, hotels, conferences, and product launches across Joburg.</p>
+        <a href="services.html#corporate"> More info →</a>
+      </article>
+    </div>
+    <div class="section-cta">
+      <a href="services.html" class="btn-primary">View All Services</a>
+    </div>
+</section>
+
+<!-- This is the strip section which is a simple design element to break up the content -->
+<!--I have added another strip constantly divide the content -->
+<section>
+    <div class="strip"></div>
+</section>
+
+<!-- This is the collection preview section which gives a brief overview of the collection offered and encourages users to view the full collection -->
+<section class="collection-preview">
+    <div class="collection-label">Our Work</div>
+    <h2 class="collection-title">A glimpse of<br /><em>our blooms</em></h2>
+    <div class="gallery-mosaic">
+      <div class="mosaic-item" style="background:#f5e6e8">
+        <div class="mosaic-inner">🌸</div>
+        <span class="mosaic-label">Bridal Bouquet</span>
+      </div>
+      <div class="mosaic-item" style="background:#e8f0e8">
+        <div class="mosaic-inner">🌿</div>
+        <span class="mosaic-label">Outside Bouquet</span>
+      </div>
+      <div class="mosaic-item" style="background:#f0e8d0">
+        <div class="mosaic-inner">🌻</div>
+        <span class="mosaic-label">Sunflower Bouquet</span>
+      </div>
+      <div class="mosaic-item mosaic-wide" style="background:#e8e0f0">
+        <div class="mosaic-inner">🌺</div>
+        <span class="mosaic-label">Tropical Bouquet</span>
+      </div>
+    </div>
+    <div class="collection-cta">
+      <a href="collection.html">See Full Collection →</a>
+    </div>
+</section>
+
+<!-- This is the strip section which is a simple design element to break up the content -->
+<section>
+    <div class="strip"></div> 
+</section>
+
+ <!-- Testimonials -->
+<section class="testimonials">
+    <div class="testimonials-label">Kind Words</div>
+    <h2 class="section-title">What some of our<br /><em>customers say</em></h2>
+    <div class="testimonials-grid">
+      <blockquote class="testimonial">
+        <p>"The wedding flowers were absolutely stunning. 100 Bloom understood our vision immediately and delivered beyond what we imagined."</p>
+        <footer><strong>Sibahle Nkosi</strong> — Bride, March 2026</footer>
+      </blockquote>
+      <blockquote class="testimonial testimonial--featured">
+        <p>"I've been ordering weekly arrangements for our office reception for two years. Consistently fresh, consistently gorgeous. Our clients always comment."</p>
+        <footer><strong>David Mbonani.</strong> — Event Client</footer>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"Sent a birthday hamper to my mother in Sandton — she called me in tears (the good kind!). The presentation was museum-worthy."</p>
+        <footer><strong>Joy Louw.</strong> — Regular Customer</footer>
+      </blockquote>
+    </div>
+</section>
+
+ <!-- About Us and Why 100 Bloom -->
+  <section class="about-us">
+    <div class="about-content">
+      <div class="section-label">Why 100 Bloom</div>
+      <h2 class="section-title">Blooms with<br /><em>intention</em></h2>
+      <p class="about-text">We believe flowers are more than decoration — they are the language of care. Every stem we select, every ribbon we tie, carries the weight of the feeling you want to send.</p>
+      <a href="about.html" class="btn-primary">Our Story</a>
+    </div>
+
+<section>
+    <div class="strip"></div> 
+</section>
+
+<!-- This is the call to action banner which encourages users to get in touch or call the business -->
+  <section class="cta-banner">
+    <div class="cta-banner-content">
+      <h2>Ready to send something<br /><em>beautiful?</em></h2>
+      <p>Whether it's a single stem or a full event installation, we'd love to help.</p>
+      <div class="blog-cta">
+        <a href="contact.html" class="btn-primary">Get in Touch</a>
+        <a href="tel:065-918-2121" class="btn-ghost">📞 Call Us</a>
+      </div>
+    </div>
+  </section>
+
+   <!-- This is the site footer usually located at the bottom of the page -->
+<footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-about">
+        <a href="index.html" class="logo">
+          <span class="logo-icon"></span>
+          <span>100 Bloom</span>
+        </a>
+        <p>Johannesburg's beloved floral studio — crafting beautiful moments, one bloom at a time.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#bouquets">Bouquets</a></li>
+          <li><a href="services.html#weddings">Weddings</a></li>
+          <li><a href="services.html#office-arrangements">Office Arrangements</a></li>
+          <li><a href="services.html#gift-packages">Gift Packages</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>📍 Johannesburg, Gauteng</p>
+        <p>📞 <a href="tel:+27000000000">+27 6 5918 2121</a></p>
+        <p>✉️ <a href="mailto:hello@100bloom.co.za">bloom100@gmail.com</a></p>
+        <p>⏰ Mon – Sat: 7am – 6pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 100 Bloom. All rights reserved.</p>
+      <p>Made with 💐 in Johannesburg</p>
+    </div>
+  </footer>
 
 
 </body>

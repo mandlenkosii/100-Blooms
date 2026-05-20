@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Bloom - Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+    
+    <!-- This is navigation bar -->
+    <header class="site-header" id="site-header">
+        <nav class="nav-container">
+          <a href="index.html" class="logo">
+            <span class="logo-icon"></span>
+            <span>100 Bloom</span>
+          </a>
+          <button class="content" id="content" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="collection.html">Collection</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="btn-nav active">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <!-- This is the contact us section -->
+<section class="contact">
+    <div class="contact-bg">
+      <div class="contact contact-1"></div>
+      <div class="contact contact-2"></div> 
+    </div>
+    <div class="contact-content">
+        <p class="contact-eyebrow">Get in Touch</p>
+        <h1 class="contact-title">We'd love to hear from you</h1>
+        <p class="contact-sub">Whether you have a question about our services, want to place an order, or just want to say hello, we're here for you. Reach out to us and we'll get back to you as soon as possible.</p>
+        <div class="contact-cta">
+            <a href="mailto:info@100bloom.com" class="btn-primary">Email Us</a>
+        </div>
+    </div>
+</section>
+
+<section>
+    
+      <!-- This is a contact form for customers to use -->
+      <div class="contact-form-container">
+        <h2 class="section-title" style="margin-bottom:2rem">Send us a<br /><em>message</em></h2>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name *</label>
+              <input type="text" id="fname" name="fname" placeholder="Your first name" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name *</label>
+              <input type="text" id="lname" name="lname" placeholder="Your last name" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="hello@youremail.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone / WhatsApp</label>
+            <input type="tel" id="phone" name="phone" placeholder="+27 000 000 0000" />
+          </div>
+          <div class="form-group">
+            <label for="service">Service Interested In</label>
+            <select id="service" name="service">
+              <option value="">— Select a service —</option>
+              <option value="bouquets">Bouquets & Arrangements</option>
+              <option value="gift-packages">Gift Packages</option>
+              <option value="weddings">Wedding Florals</option>
+              <option value="corporate">Corporate & Events</option>
+              <option value="other">Other / Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell Us More *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your vision, budget, preferred flowers, or any other details that might help us..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">Send Message 🌸</button>
+          <div class="form-success" id="form-success" hidden>
+            <p>✅ Thank you! We'll be in touch within 24 hours.</p>
+          </div>
+        </form>
+      </div>
+</section>
+
+<!--This the delivery information section-->
+<section class="delivery-info">
+    <div class="delivery-info">
+          <h3>🚚 Delivery Areas</h3>
+          <p>We offer same-day delivery across Johannesburg including:</p>
+          <ul>
+            <li>Sandton & Rosebank</li>
+            <li>Fourways & Midrand</li>
+            <li>Soweto & Johannesburg CBD</li>
+            <li>Randburg & Roodepoort</li>
+            <li>East Rand (Boksburg, Bedfordview)</li>
+          </ul>
+          <p class="info-note">Nationwide delivery available for gift packages. Contact us for details.</p>
+    </div>
+</section>
+
+
+<!-- This is the footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <p>&copy; 2023 100 Bloom. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
