@@ -13,7 +13,7 @@
     
     
     <!-- This is navigation bar -->
-    <header class="site-header" id="site-header">
+<header class="site-header" id="site-header">
   <div class="nav-container">
             <a href="index.html" class="logo">
             <span class="logo-icon"></span>
@@ -23,7 +23,6 @@
             <span></span><span></span><span></span>
             </button>
     </div>
-
     </nav>
         <ul class="nav-links" id="nav-links">
             <li><a href="index.html" class="active">Home</a></li>
@@ -33,7 +32,7 @@
             <li><a href="contact.html" >Contact Us</a></li>
         </ul>
      </nav>
-    </header>
+</header>
 
 
 <!-- This is the blog section where it showcases featured content -->
@@ -243,6 +242,13 @@
       <p>Made with 💐 in Johannesburg</p>
     </div>
   </footer>
+  <script>
+    const btn = document.getElementById('content');
+    const nav = document.getElementById('nav-links');
+    const hdr = document.getElementById('site-header');
+    btn?.addEventListener('click', () => { btn.classList.toggle('open'); nav.classList.toggle('open'); });
+    window.addEventListener('scroll', () => { hdr?.classList.toggle('scrolled', scrollY > 10); });
+  </script>
 
 
 </body>
