@@ -16,9 +16,13 @@
     <header class="site-header" id="site-header">
 
     <div class="nav-container">
-            <a href="index.html" class="logo"></a>
+            <a href="index.html" class="logo"
             <span class="logo-icon"></span>
             <h1>100 Blooms</h1>
+            </a>
+            <button class="content" id="content" aria-label="Open menu">
+            <span></span><span></span><span></span>
+            </button>
     </div>
 
     </nav>
@@ -42,12 +46,19 @@
     </div>
     <div class="blog-content">
       <p class="blog-eyebrow">Johannesburg's Premier Floral Studio</p>
-      <h1 class="blog-title">Where every<br /><em>bloom</em> tells<br />a story</h1>
+      <h1 class="blog-title">Where <br /><em>blooming</em> is our only<br />a story</h1>
       <p class="blog-sub">Handcrafted bouquets, curated gifts, and floral designs for life's most meaningful moments.</p>
       <div class="blog-cta">
         <a href="services.html" class="btn-primary">Explore Offerings</a>
         <a href="contact.html" class="btn-ghost">Order Now →</a>
       </div>
+        <div class="hero-image-panel">
+        <img
+          src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=900&auto=format&fit=crop&q=80"
+          alt="Beautiful fresh flower arrangement by 100 Bloom"
+          class="hero-img"
+        />
+        </div>
 </section>
 
 <!-- This is the strip section which is a simple design element to break up the content -->
@@ -61,25 +72,33 @@
     <h2 class="services-title">Crafted for<br /><em>every occasion</em></h2>
     <div class="services-grid">
       <article class="service-card">
-        <div class="service-icon">💐</div>
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=600&auto=format&fit=crop&q=80" alt="Hand-tied bouquet" />
+        </div>
         <h3>Bouquets & Arrangements</h3>
         <p>From classic roses to wild meadow bunches, each arrangement is hand-tied by our expert florists using the freshest seasonal stems.</p>
         <a href="services.html#bouquets"> More info →</a>
       </article>
       <article class="service-card">
-        <div class="service-icon">🎁</div>
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=600&auto=format&fit=crop&q=80" alt="Gift hamper" />
+        </div>
         <h3>Gift Packages</h3>
         <p>Thoughtfully curated hampers pairing beautiful blooms with premium chocolates, candles, and personalised keepsakes.</p>
         <a href="services.html#packages"> More info →</a>
       </article>
       <article class="service-card">
-        <div class="service-icon">💍</div>
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&auto=format&fit=crop&q=80" alt="Wedding ceremony arch" />
+        </div>
         <h3>Wedding Florals</h3>
         <p>Full wedding floral design — bridal bouquets, ceremony arches, table centrepieces — all tailored to your vision and theme.</p>
         <a href="services.html#weddings"> More info →</a>
       </article>
       <article class="service-card">
-        <div class="service-icon">🏢</div>
+        <div class="service-card-img">
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=600&auto=format&fit=crop&q=80" alt="Office floral arrangement" />
+        </div>
         <h3>Corporate & Events</h3>
         <p>Subscription floral programmes and event styling for offices, hotels, conferences, and product launches across Joburg.</p>
         <a href="services.html#corporate"> More info →</a>
@@ -101,20 +120,20 @@
     <div class="collection-label">Our Work</div>
     <h2 class="collection-title">A glimpse of<br /><em>our blooms</em></h2>
     <div class="gallery-mosaic">
-      <div class="mosaic-item" style="background:#f5e6e8">
-        <div class="mosaic-inner">🌸</div>
+      <div class="mosaic-item">
+        <img src="https://images.unsplash.com/photo-1490750967868-88df5691cc28?w=600&auto=format&fit=crop&q=80" alt="Bridal Bouquet" />
         <span class="mosaic-label">Bridal Bouquet</span>
       </div>
-      <div class="mosaic-item" style="background:#e8f0e8">
-        <div class="mosaic-inner">🌿</div>
+      <div class="mosaic-item">
+        <img src="https://images.unsplash.com/photo-1502082502076-148793c8e3d4?w=600&auto=format&fit=crop&q=80" alt="Outside Bouquet" />
         <span class="mosaic-label">Outside Bouquet</span>
       </div>
       <div class="mosaic-item" style="background:#f0e8d0">
-        <div class="mosaic-inner">🌻</div>
+        <img src="https://images.unsplash.com/photo-1495366462931-5a2c7a9b5b4e?w=600&auto=format&fit=crop&q=80" alt="Sunflower Bouquet" />
         <span class="mosaic-label">Sunflower Bouquet</span>
       </div>
       <div class="mosaic-item mosaic-wide" style="background:#e8e0f0">
-        <div class="mosaic-inner">🌺</div>
+        <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=600&auto=format&fit=crop&q=80" alt="Tropical Bouquet" />
         <span class="mosaic-label">Tropical Bouquet</span>
       </div>
     </div>
@@ -149,14 +168,19 @@
 </section>
 
  <!-- About Us and Why 100 Bloom -->
-  <section class="about-us">
+<section class="about-us">
     <div class="about-content">
       <div class="section-label">Why 100 Bloom</div>
       <h2 class="section-title">Blooms with<br /><em>intention</em></h2>
       <p class="about-text">We believe flowers are more than decoration — they are the language of care. Every stem we select, every ribbon we tie, carries the weight of the feeling you want to send.</p>
       <a href="about.html" class="btn-primary">Our Story</a>
     </div>
+    <div class="about-us-image">
+        <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=800&auto=format&fit=crop&q=80" alt="Florist crafting a bouquet" />
+    </div>
+</section>
 
+<!-- This is the strip section which is a simple design element to break up the content -->
 <section>
     <div class="strip"></div> 
 </section>

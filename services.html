@@ -27,6 +27,7 @@
         <li><a href="contact.html" class="btn-nav">Contact Us</a></li>
       </ul>
     </nav>
+</header>
 
  <!-- This is the blog page for the services -->
 <section class="blog">
@@ -44,8 +45,8 @@
    <!-- This is the section for bouquet services in detail -->
 <section class="service-detail" id="bouquets">
     <div class="service-detail-container">
-      <div class="service-detail-visual sd-visual--bloom">
-        <div class="visual-emoji">💐</div>
+      <div class="service-detail-visual">
+        <img src="https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=900&auto=format&fit=crop&q=80" alt="Hand-tied fresh bouquets" />
         <div class="visual-tag">From R250</div>
       </div>
       <div class="service-detail-text">
@@ -68,7 +69,7 @@
 <section class="service-detail" id="weddings">
     <div class="service-detail-container">
       <div class="service-detail-visual sd-visual--wedding">
-        <div class="visual-emoji">💍</div>
+        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=900&auto=format&fit=crop&q=80" alt="Wedding ceremony arch" />
         <div class="visual-tag">Custom Quote</div>
       </div>
       <div class="service-detail-text">
@@ -104,7 +105,7 @@
         <a href="contact.html" class="btn-primary">Get Office Pricing</a>
       </div>
       <div class="service-detail-visual sd-visual--office">
-        <div class="visual-emoji">🏢</div>
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&auto=format&fit=crop&q=80" alt="Office floral arrangement" />
         <div class="visual-tag">Monthly Plans</div>
       </div>
     </div>
@@ -127,7 +128,7 @@
         <a href="contact.html" class="btn-primary">Design a Package</a>
       </div>
       <div class="service-detail-visual sd-visual--package">
-        <div class="visual-emoji">🎁</div>
+        <img src="https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=900&auto=format&fit=crop&q=80" alt="Gift package with flowers and chocolates" />
         <div class="visual-tag">From R450</div>
       </div>
     </div>
@@ -219,8 +220,13 @@
     </div>
   </footer>
 
-</header>
-
+<script>
+    const btn = document.getElementById('content');
+    const nav = document.getElementById('nav-links');
+    const hdr = document.getElementById('site-header');
+    btn?.addEventListener('click', () => { btn.classList.toggle('open'); nav.classList.toggle('open'); });
+    window.addEventListener('scroll', () => { hdr?.classList.toggle('scrolled', scrollY > 10); });
+  </script>
 
 </body>
 </html>

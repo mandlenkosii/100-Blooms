@@ -1484,3 +1484,364 @@ footer.footer p {
     transition-duration: .01ms !important;
   }
 }
+/* ══════════════════════════════════════════════════════════
+   IMAGE INTEGRATION — additions for real photo layouts
+   ══════════════════════════════════════════════════════════ */
+
+/* ── Hero split layout (index, about, contact) ─────────── */
+.hero-with-image { min-height: 92vh; align-items: stretch; }
+
+.hero-layout {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: var(--max-w);
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 5vw, 3rem);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+  min-height: 92vh;
+}
+
+.hero-image-panel {
+  position: relative;
+  height: 75vh;
+  max-height: 680px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ── Service card images ────────────────────────────────── */
+.service-card-img {
+  width: 100%;
+  height: 200px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: .5rem;
+}
+
+.service-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s var(--ease);
+}
+
+.service-card:hover .service-card-img img {
+  transform: scale(1.06);
+}
+
+/* ── Gallery mosaic with real images ────────────────────── */
+.mosaic-item {
+  overflow: hidden;
+  background: none !important;
+  height: 300px;
+}
+
+.mosaic-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s var(--ease);
+}
+
+.mosaic-item:hover img { transform: scale(1.07); }
+
+/* ── Service detail visual — real photo ─────────────────── */
+.service-detail-visual {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  position: relative;
+}
+
+.service-detail-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s var(--ease);
+}
+
+.service-detail-visual:hover img { transform: scale(1.04); }
+
+/* ── Steps with images ──────────────────────────────────── */
+.step-img {
+  width: 100%;
+  height: 160px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: .25rem;
+}
+
+.step-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s var(--ease);
+}
+
+.step:hover .step-img img { transform: scale(1.06); }
+
+/* ── About Us home section — side-by-side layout ────────── */
+.about-us-inner {
+  max-width: var(--max-w);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.about-us-image {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 480px;
+}
+
+.about-us-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ── Values grid (about page) ───────────────────────────── */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.value-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.value-icon {
+  width: 100%;
+  height: 180px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.value-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s var(--ease);
+}
+
+.value-item:hover .value-icon img { transform: scale(1.06); }
+
+.value-item h3 { font-size: 1.15rem; margin-top: .25rem; }
+
+.value-item p { font-size: .875rem; line-height: 1.65; }
+
+/* ── Team avatar as circular photo ──────────────────────── */
+.team-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: none !important;
+}
+
+.team-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* ── Contact form section spacing ───────────────────────── */
+.contact-form-section {
+  padding: var(--space-lg) clamp(1.25rem, 5vw, 3rem);
+}
+
+/* ── Delivery info — side-by-side ───────────────────────── */
+.delivery-info-inner {
+  max-width: var(--max-w);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.delivery-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.delivery-text ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: .75rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.delivery-text ul li { font-size: .9rem; color: var(--bark-mid); }
+
+.delivery-image {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 360px;
+}
+
+.delivery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ── Collection full page ───────────────────────────────── */
+.collection-full {
+  max-width: var(--max-w);
+  margin-inline: auto;
+  padding: var(--space-lg) clamp(1.25rem, 5vw, 3rem) var(--space-xl);
+}
+
+.collection-category {
+  margin-bottom: var(--space-lg);
+}
+
+.category-label {
+  font-family: var(--font-body);
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--rose);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.category-label::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 1.5px;
+  background: var(--rose);
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.collection-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--warm-white);
+  border: 1px solid var(--mist);
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+}
+
+.collection-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.collection-card--wide {
+  grid-column: span 2;
+}
+
+.collection-img {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.collection-card--wide .collection-img { height: 340px; }
+
+.collection-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s var(--ease);
+}
+
+.collection-card:hover .collection-img img { transform: scale(1.06); }
+
+.collection-info {
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collection-info h4 {
+  font-size: 1rem;
+  font-family: var(--font-display);
+  color: var(--bark);
+}
+
+.collection-info p {
+  font-size: .8rem;
+  font-weight: 500;
+  color: var(--rose);
+}
+
+/* ── Responsive updates for image layouts ───────────────── */
+@media (max-width: 900px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    gap: 2.5rem;
+  }
+
+  .hero-image-panel {
+    height: 50vw;
+    max-height: 420px;
+    min-height: 260px;
+  }
+
+  .about-us-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-us-image { height: 360px; }
+
+  .values-grid { grid-template-columns: 1fr; }
+
+  .delivery-info-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .delivery-image { height: 260px; }
+
+  .collection-card--wide { grid-column: span 1; }
+  .collection-card--wide .collection-img { height: 240px; }
+}
+
+@media (max-width: 640px) {
+  .hero-image-panel { height: 60vw; }
+
+  .service-card-img { height: 180px; }
+
+  .mosaic-item { height: 200px; }
+
+  .collection-grid { grid-template-columns: 1fr 1fr; }
+
+  .step-img { height: 120px; }
+
+  .about-us-image { height: 280px; }
+}

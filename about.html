@@ -39,6 +39,9 @@
       <h1 class="about-title">Rooted in<br /><em>Passion & Blooming Dreams</em></h1>
       <p class="about-sub">100 Bloom was born from a love of flowers and a desire to bring beauty into everyday life. Founded in 2020 by a team of passionate florists, we started as a small local shop in Johannesburg and have blossomed into a beloved floral studio known for our handcrafted bouquets and personalized service.</p>
     </div>    
+    <div class="hero-image-panel">
+        <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=900&auto=format&fit=crop&q=80" alt="Florist crafting a beautiful arrangement" class="hero-img" />
+      </div>
 </section>
 
 <!-- This is the section for explaining the values of the company -->
@@ -57,13 +60,17 @@
     </div>
     <div class="team-grid">
       <div class="team-card">
-        <div class="team-avatar" style="background:linear-gradient(135deg,#f9d5d3,#f0a0aa)">🌸</div>
+        <div class="team-avatar" style="background:linear-gradient(135deg,#f9d5d3,#f0a0aa)">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6J7bLP9KLZlq5ipYNAYX6cNu-KJRl0YaxGA&s" alt="Mandla Sikhosa" />
+        </div>
         <h3>Mandla Sikhosa</h3>
         <p class="team-role">Founder & Head Florist</p>
         <p>With only 5 years of floral design knowledge and passion for creating beautiful flower arrangements. He is dedicated to bringing joy and beauty to every occasion.</p>
       </div>
       <div class="team-card">
-        <div class="team-avatar" style="background:linear-gradient(135deg,#d8f0e8,#8dd8b4)">🌿</div>
+        <div class="team-avatar" style="background:linear-gradient(135deg,#d8f0e8,#8dd8b4)">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=80" alt="David Madlanga" />
+        </div>
         <h3>David Madlanga</h3>
         <p class="team-role">Operations Manager</p>
         <p>With extensive experience in other business operations, David is sure to bring efficiency and excellence to our daily operations.</p>
@@ -102,10 +109,61 @@
 </section>
 
 <!-- This is the footer -->
-<footer class="footer">
-    <div class="footer-container">
-        <p>&copy; 2023 100 Bloom. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-about">
+        <a href="index.html" class="logo">
+          <span class="logo-icon"></span>
+          <span>100 Bloom</span>
+        </a>
+        <p>Johannesburg's beloved floral studio — crafting beautiful moments, one bloom at a time.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="collection.html">Collection</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#bouquets">Bouquets</a></li>
+          <li><a href="services.html#weddings">Weddings</a></li>
+          <li><a href="services.html#office">Office Arrangements</a></li>
+          <li><a href="services.html#packages">Gift Packages</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>📍 Johannesburg, Gauteng</p>
+        <p>📞 <a href="tel:+27659182121">+27 65 918 2121</a></p>
+        <p>✉️ <a href="mailto:bloom100@gmail.com">bloom100@gmail.com</a></p>
+        <p>⏰ Mon – Sat: 7am – 6pm</p>
+      </div>
     </div>
-</footer>
+    <div class="footer-bottom">
+      <p>© 2025 100 Bloom. All rights reserved.</p>
+      <p>Made with 💐 in Johannesburg</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('content');
+    const nav = document.getElementById('nav-links');
+    const hdr = document.getElementById('site-header');
+    btn?.addEventListener('click', () => { btn.classList.toggle('open'); nav.classList.toggle('open'); });
+    window.addEventListener('scroll', () => { hdr?.classList.toggle('scrolled', scrollY > 10); });
+  </script>
+</body>
+
 </body>
 </html>
